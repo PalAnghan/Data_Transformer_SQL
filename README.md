@@ -361,8 +361,8 @@ intended viewers can access the video.
 
 BCA Graduate · SQL · Python · Data Analytics · MERN Stack
 
--   GitHub: [Add your GitHub profile URL](YOUR_GITHUB_PROFILE_URL)
--   LinkedIn: [Add your LinkedIn profile URL](YOUR_LINKEDIN_PROFILE_URL)
+-   GitHub: [github.com/PalAnghan](https://github.com/PalAnghan)
+-   LinkedIn: [linkedin.com/in/pal-anghan-7733402b4](https://www.linkedin.com/in/pal-anghan-7733402b4)
 -   Project repository: [Data Transformer
     SQL](https://github.com/PalAnghan/Data_Transformer_SQL)
 
