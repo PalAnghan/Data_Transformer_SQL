@@ -1,76 +1,69 @@
-::: {align="center"}
 # ⚡ DATA TRANSFORMER
 
-### SQL-Powered Corporate Data Analysis
+## SQL-Powered Corporate Data Analysis
 
-`<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=650&lines=Transform+Raw+Data+into+Insights;Explore+17+Practical+SQL+Queries;JOINs+%7C+Subqueries+%7C+Window+Functions" alt="Animated project tagline" />`{=html}
+![Animated project
+tagline](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=650&lines=Transform+Raw+Data+into+Insights;Explore+17+Practical+SQL+Queries;JOINs+%7C+Subqueries+%7C+Window+Functions)
 
-```{=html}
-<p>
-```
-`<img src="https://img.shields.io/badge/SQL-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL badge" />`{=html}
-`<img src="https://img.shields.io/badge/Project-Data%20Analytics-7C3AED?style=for-the-badge" alt="Data analytics badge" />`{=html}
-`<img src="https://img.shields.io/badge/Queries-17-16A34A?style=for-the-badge" alt="17 queries badge" />`{=html}
-`<img src="https://img.shields.io/badge/Status-Completed-16A34A?style=for-the-badge" alt="Project status badge" />`{=html}
-```{=html}
-</p>
-```
-**A practical SQL project that models a small company's customers,
-orders, and employees --- then uses SQL to answer business questions.**
+![MySQL](https://img.shields.io/badge/SQL-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Data
+Analytics](https://img.shields.io/badge/Project-Data%20Analytics-7C3AED?style=for-the-badge)
+![17
+Queries](https://img.shields.io/badge/Queries-17-16A34A?style=for-the-badge)
+![Completed](https://img.shields.io/badge/Status-Completed-16A34A?style=for-the-badge)
 
-[📖 Documentation](#-table-of-contents) · [🎥 Explanation
-Video](#-project-explanation-video) · [🚀 Run the
-Project](#-getting-started)
-:::
+> A practical SQL project that models a company's customers, orders, and
+> employees --- then uses SQL to answer business questions.
+
+**Documentation** · **[Project Explanation
+Video](#-project-explanation-video)** · **[Run the
+Project](#-getting-started)**
 
 ------------------------------------------------------------------------
 
 ## 📌 Table of Contents
 
-```{=html}
-<details open>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}Click to expand / collapse navigation`</strong>`{=html}
-```{=html}
-</summary>
-```
--   [About the Project](#-about-the-project)
--   [Project Objectives](#-project-objectives)
--   [Database Design](#-database-design)
--   [Project Structure](#-project-structure)
--   [SQL Concepts and 17 Tasks](#-sql-concepts-and-17-tasks)
--   [Getting Started](#-getting-started)
--   [Sample Results](#-sample-results)
--   [Project Explanation Video](#-project-explanation-video)
--   [Assumptions and Notes](#-assumptions-and-notes)
--   [Future Improvements](#-future-improvements)
--   [Author](#-author)
+1.  [About the Project](#-about-the-project)
+2.  [Project Objectives](#-project-objectives)
+3.  [Database Design](#-database-design)
+4.  [Project Structure](#-project-structure)
+5.  [SQL Concepts and 17 Tasks](#-sql-concepts-and-17-tasks)
+6.  [Getting Started](#-getting-started)
+7.  [Sample Results](#-sample-results)
+8.  [Project Explanation Video](#-project-explanation-video)
+9.  [Assumptions and Notes](#-assumptions-and-notes)
+10. [Future Improvements](#-future-improvements)
+11. [Author](#-author)
 
-```{=html}
-</details>
-```
+------------------------------------------------------------------------
+
 ## 💡 About the Project
 
 **Data Transformer** is a hands-on SQL project designed to practice data
 retrieval, joining, analysis, and transformation in a corporate-style
 database.
 
-The database contains three related tables:
+The database contains three tables:
 
--   **Customers** --- customer details and registration dates.
--   **Orders** --- customer purchases, order dates, and order amounts.
--   **Employees** --- employee details, departments, hire dates, and
-    salaries.
+  -----------------------------------------------------------------------
+  Table                               Purpose
+  ----------------------------------- -----------------------------------
+  `Customers`                         Customer details and registration
+                                      dates
 
-The project uses a set of 17 SQL tasks to turn these records into useful
-information for reporting and analysis.
+  `Orders`                            Customer purchases, order dates,
+                                      and order amounts
+
+  `Employees`                         Employee details, departments, hire
+                                      dates, and salaries
+  -----------------------------------------------------------------------
+
+The project contains 17 SQL tasks covering practical data analysis
+techniques.
 
 ## 🎯 Project Objectives
 
--   Design a relational database with primary and foreign keys.
+-   Design a relational database using primary and foreign keys.
 -   Insert and query sample business data.
 -   Combine related records using SQL JOINs.
 -   Use subqueries to compare values with averages.
@@ -81,7 +74,7 @@ information for reporting and analysis.
 
 ## 🗄️ Database Design
 
-### Entity relationship overview
+### Entity relationship diagram
 
 ``` mermaid
 erDiagram
@@ -116,14 +109,14 @@ erDiagram
 `Orders.CustomerID` references `Customers.CustomerID`. The Employees
 table is independent in this project.
 
-### Tables at a glance
+### Dataset summary
 
-  Table         Primary key    Purpose                       Sample rows
-  ------------- -------------- --------------------------- -------------
-  `Customers`   `CustomerID`   Customer information                    8
-  `Orders`      `OrderID`      Customer transactions                  12
-  `Employees`   `EmployeeID`   Employee performance data               8
-  **Total**     ---            **Sample records**                 **28**
+  Table         Sample records
+  ----------- ----------------
+  Customers                  8
+  Orders                    12
+  Employees                  8
+  **Total**             **28**
 
 ## 📁 Project Structure
 
@@ -150,18 +143,10 @@ Data-Transformer/
 
 ## 🧠 SQL Concepts and 17 Tasks
 
-```{=html}
-<details open>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}1--4 · JOIN Operations`</strong>`{=html}
-```{=html}
-</summary>
-```
+### 1--4 · JOIN Operations
+
   ------------------------------------------------------------------------
-                            \# Task                  What it does
+                            \# Task                  Description
   ---------------------------- --------------------- ---------------------
                              1 `INNER JOIN`          Returns customers
                                                      with matching orders.
@@ -181,25 +166,14 @@ Data-Transformer/
                                                      rows from both sides.
   ------------------------------------------------------------------------
 
-> **MySQL note:** MySQL does not provide a native `FULL OUTER JOIN`
-> syntax. This project demonstrates the equivalent using `LEFT JOIN`,
-> `RIGHT JOIN`, and `UNION`.
+**MySQL note:** MySQL does not support native `FULL OUTER JOIN` syntax.
+This project demonstrates the equivalent using `LEFT JOIN`,
+`RIGHT JOIN`, and `UNION`.
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}5--6 · Subqueries`</strong>`{=html}
-```{=html}
-</summary>
-```
+### 5--6 · Subqueries
+
   ------------------------------------------------------------------------
-                            \# Task                  What it does
+                            \# Task                  Description
   ---------------------------- --------------------- ---------------------
                              5 Above-average order   Finds customers with
                                customers             at least one order
@@ -212,21 +186,10 @@ Data-Transformer/
                                                      employee salary.
   ------------------------------------------------------------------------
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}7--9 · Date Functions`</strong>`{=html}
-```{=html}
-</summary>
-```
+### 7--9 · Date Functions
+
   ------------------------------------------------------------------------
-                            \# Task                  MySQL function
+                            \# Task                  Function
   ---------------------------- --------------------- ---------------------
                              7 Extract year and      `YEAR()`, `MONTH()`
                                month from an order   
@@ -240,21 +203,10 @@ Data-Transformer/
                                `DD-MM-YYYY`          
   ------------------------------------------------------------------------
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}10--13 · String Functions`</strong>`{=html}
-```{=html}
-</summary>
-```
+### 10--13 · String Functions
+
   ------------------------------------------------------------------------
-                            \# Task                  MySQL function
+                            \# Task                  Function
   ---------------------------- --------------------- ---------------------
                             10 Combine first and     `CONCAT()`
                                last name             
@@ -271,21 +223,10 @@ Data-Transformer/
                                email                 
   ------------------------------------------------------------------------
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}14--15 · Window Functions`</strong>`{=html}
-```{=html}
-</summary>
-```
+### 14--15 · Window Functions
+
   --------------------------------------------------------------------------------------
-                            \# Task                  SQL function
+                            \# Task                  Function
   ---------------------------- --------------------- -----------------------------------
                             14 Calculate a running   `SUM() OVER (ORDER BY ...)`
                                order total           
@@ -295,19 +236,8 @@ Data-Transformer/
                                amount                
   --------------------------------------------------------------------------------------
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}16--17 · CASE Expressions`</strong>`{=html}
-```{=html}
-</summary>
-```
+### 16--17 · CASE Expressions
+
   ------------------------------------------------------------------------
                             \# Task                  Business rule
   ---------------------------- --------------------- ---------------------
@@ -321,40 +251,37 @@ Data-Transformer/
                                                      → Low.
   ------------------------------------------------------------------------
 
-```{=html}
-</details>
-```
 ## 🚀 Getting Started
 
 ### Prerequisites
 
--   MySQL 8.0+ recommended (window functions are supported).
+-   MySQL 8.0 or later (recommended).
 -   MySQL Workbench, phpMyAdmin, or another MySQL client.
--   A code editor such as Visual Studio Code.
+-   Visual Studio Code or another code editor.
 
 ### 1. Clone the repository
 
-Replace the placeholder with your GitHub repository URL after you create
-it.
+Replace the placeholder with your repository URL:
 
 ``` bash
 git clone YOUR_GITHUB_REPOSITORY_URL
 cd Data-Transformer
 ```
 
-Or download the repository as a ZIP file and open the folder in VS Code.
+Alternatively, download the repository as a ZIP file and open the folder
+in VS Code.
 
 ### 2. Create the database
 
-Run the SQL files in this order:
+Run these files in order:
 
 1.  `database/01_create_database.sql`
 2.  `database/02_create_tables.sql`
 3.  `database/03_insert_data.sql`
 
-### 3. Run the analysis queries
+### 3. Execute the analysis queries
 
-Execute the query files in order:
+Run the query files in order:
 
 1.  `queries/01_joins.sql`
 2.  `queries/02_subqueries.sql`
@@ -363,16 +290,12 @@ Execute the query files in order:
 5.  `queries/05_window_functions.sql`
 6.  `queries/06_case_expressions.sql`
 
-> Run each query in a MySQL connection. The SQL files are organized for
-> learning and review; execute the relevant statement or selected block
-> in your SQL editor.
+Run each statement using your MySQL connection.
 
 ## 📊 Sample Results
 
-The sample dataset contains 8 customers, 12 orders, and 8 employees.
-
   -----------------------------------------------------------------------
-  Analysis                            Expected result with the supplied
+  Analysis                            Expected result with supplied
                                       sample data
   ----------------------------------- -----------------------------------
   Customers with above-average orders 4 customers
@@ -382,50 +305,46 @@ The sample dataset contains 8 customers, 12 orders, and 8 employees.
   Orders returned by JOIN and ranking 12 orders
   queries                             
 
-  Customers returned by the           13 rows (12 matched orders + 1
-  full-outer-join equivalent          customer without orders)
+  Full-outer-join equivalent          13 rows: 12 matched orders and 1
+                                      customer without orders
   -----------------------------------------------------------------------
 
-**Example business insights:**
+### Example business insights
 
 -   A customer can have multiple orders.
 -   A customer with no order is retained by a `LEFT JOIN`.
--   The average employee salary can be used to identify above-average
-    earners.
--   Window functions calculate cumulative totals and order rankings
-    without collapsing the individual order rows.
+-   Average salary helps identify above-average earners.
+-   Window functions calculate cumulative totals and rankings without
+    collapsing individual order rows.
 
 ## 🎥 Project Explanation Video
 
-> **Video link will be added after recording.**
+**Video coming soon.** I will add the project walkthrough after
+recording it.
 
-::: {align="center"}
-[![Project explanation video
-placeholder](https://img.shields.io/badge/▶%20Watch%20Project%20Explanation-Add%20Video%20Link%20Later-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](YOUR_VIDEO_LINK_HERE)
+When the video is ready, replace the placeholder below with your YouTube
+or Google Drive URL:
 
-**Coming soon --- a walkthrough of the database design, all 17 SQL
-tasks, and query results.**
-:::
+[▶ Watch the Data Transformer project explanation](YOUR_VIDEO_LINK_HERE)
 
-To add your video later, replace `YOUR_VIDEO_LINK_HERE` with your
-YouTube or Google Drive share URL. For Google Drive, make sure the video
-sharing permission allows your intended viewers to access it.
+For Google Drive, set the sharing permission so your instructor or
+intended viewers can access the video.
 
 ## 📝 Assumptions and Notes
 
--   The sample data is for learning and demonstration; it is not real
-    customer or employee information.
+-   The sample data is fictional and intended for learning and
+    demonstration.
 -   Question 5 is interpreted as finding customers who have at least one
     individual order greater than the average order amount.
--   Question 16 uses the discount labels specified in the assignment:
-    greater than 1,000 gives 10%, greater than 500 gives 5%, otherwise
-    no discount. The query labels the discount; it does not calculate a
-    discounted payable amount.
+-   Question 16 follows the assignment's discount labels: greater than
+    1,000 gives 10%; greater than 500 gives 5%; otherwise no discount.
+    The query labels the discount; it does not calculate the discounted
+    payable amount.
 -   Question 17's salary thresholds are project assumptions because the
     assignment does not specify exact boundaries.
 -   Question 8 uses the current date at execution time, so its result
     changes over time.
--   The SQL syntax in this README is written for MySQL. Do not mix it
+-   The SQL syntax in this project is written for MySQL. Do not mix it
     with SQL Server-specific date functions.
 
 ## 🔮 Future Improvements
@@ -434,7 +353,7 @@ sharing permission allows your intended viewers to access it.
 -   Add data validation and additional constraints.
 -   Export selected query results for reporting.
 -   Build a dashboard to visualize order and employee analysis.
--   Add screenshots of query outputs and a project demonstration video.
+-   Add query-output screenshots and a project demonstration video.
 
 ## 👨‍💻 Author
 
@@ -444,13 +363,12 @@ BCA Graduate · SQL · Python · Data Analytics · MERN Stack
 
 -   GitHub: [Add your GitHub profile URL](YOUR_GITHUB_PROFILE_URL)
 -   LinkedIn: [Add your LinkedIn profile URL](YOUR_LINKEDIN_PROFILE_URL)
--   Project repository: [Add repository URL](YOUR_GITHUB_REPOSITORY_URL)
+-   Project repository: [Data Transformer
+    SQL](https://github.com/PalAnghan/Data_Transformer_SQL)
 
 ------------------------------------------------------------------------
 
-::: {align="center"}
-**⭐ If you find this project useful, consider giving the repository a
-star!**
+⭐ If you find this project useful, consider giving the repository a
+star.
 
-Made with focus, curiosity, and SQL.
-:::
+**Made with focus, curiosity, and SQL.**
