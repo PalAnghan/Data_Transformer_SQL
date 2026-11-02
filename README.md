@@ -325,7 +325,7 @@ recording it.
 When the video is ready, replace the placeholder below with your YouTube
 or Google Drive URL:
 
-[▶ Watch the Data Transformer project explanation](YOUR_VIDEO_LINK_HERE)
+[▶ Watch the Data Transformer project explanation](https://drive.google.com/file/d/1CkGcPaNTPD8J0jb-324LzczuktCqAOac/view?usp=drive_link)
 
 For Google Drive, set the sharing permission so your instructor or
 intended viewers can access the video.
